@@ -65,6 +65,38 @@ function sqlitep(path)
       _db.all.apply(_db, args);
     });
   };
+
+  // Forwarding interface
+
+  var __prepare__ = this.prepare = function()
+  {
+    return _db.prepare.apply(_db, arguments);
+  }
+
+  var __each__ = this.each = function()
+  {
+    return _db.each.apply(_db, arguments);
+  }
+
+  var __map__ = this.map = function()
+  {
+    return _db.map.apply(_db, arguments);
+  }
+
+  var __addListener__ = this.addListener = function()
+  {
+    return _db.addListener.apply(_db, arguments);
+  }
+
+  var __removeListener__ = this.removeListener = function()
+  {
+    return _db.removeListener.apply(_db, arguments);
+  }
+
+  var __removeAllListeners__ = this.removeAllListeners = function()
+  {
+    return _db.removeAllListeners.apply(_db, arguments);
+  }
 }
 
 module.export = {

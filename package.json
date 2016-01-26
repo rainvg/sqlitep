@@ -2,7 +2,7 @@
   "name": "sqlitep",
   "version": "1.0.0",
   "description": "A sqlite3 wrapper that introduces promises.",
-  "main": "dist/index.js",
+  "main": "dist/index.min.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/index.js",
     "lint": "gulp lint",

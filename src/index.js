@@ -247,6 +247,6 @@ function database(path)
   };
 }
 
-module.export = {
+module.exports = {
   database: database
 };
